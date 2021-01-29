@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <title>Hello, Rust's Wasm World!</title>
-    <script type="module" src="index.js"></script>
+    <script type="module">
+      import init, { greet } from './pkg/hello_rust_wasm.js'
+
+      async function run() {
+        await init()
+        document.body.textContent = greet()
+      }
+
+      run()
+    </script>
   </head>
+
   <body></body>
 </html>
