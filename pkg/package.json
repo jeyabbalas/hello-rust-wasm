@@ -1,0 +1,15 @@
+{
+  "name": "hello-rust-wasm",
+  "collaborators": [
+    "Jeya Balaji Balasubramanian <jeyabbalas@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "hello_rust_wasm_bg.wasm",
+    "hello_rust_wasm.js",
+    "hello_rust_wasm.d.ts"
+  ],
+  "module": "hello_rust_wasm.js",
+  "types": "hello_rust_wasm.d.ts",
+  "sideEffects": false
+}
